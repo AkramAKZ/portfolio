@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body class="min-h-screen">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white bg-opacity-90 shadow-sm z-50 backdrop-blur-sm">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-xl font-bold text-indigo-600">Portfolio</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="nav-link text-gray-700 hover:text-indigo-600">Home</a>
+                    <a href="#about" class="nav-link text-gray-700 hover:text-indigo-600">About</a>
+                    <a href="#education" class="nav-link text-gray-700 hover:text-indigo-600">Education</a>
+                    <a href="#projects" class="nav-link text-gray-700 hover:text-indigo-600">Projects</a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-indigo-600">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="text-gray-700 hover:text-indigo-600 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-2 px-4 shadow-lg">
+            <a href="#home" class="block py-2 text-gray-700 hover:text-indigo-600 mobile-nav-link">Home</a>
+            <a href="#about" class="block py-2 text-gray-700 hover:text-indigo-600 mobile-nav-link">About</a>
+            <a href="#education" class="block py-2 text-gray-700 hover:text-indigo-600 mobile-nav-link">Education</a>
+            <a href="#projects" class="block py-2 text-gray-700 hover:text-indigo-600 mobile-nav-link">Projects</a>
+            <a href="#contact" class="block py-2 text-gray-700 hover:text-indigo-600 mobile-nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+        <div class="flex flex-col md:flex-row items-center justify-between">
+            <!-- Profile Picture -->
+            <div class="profile-circle mb-10 md:mb-0 flex items-center justify-center">
+                <i class="fas fa-user text-6xl text-gray-500"></i>
+            </div>
+            
+            <!-- Divider Line -->
+            <div class="divider-line hidden md:block mx-10"></div>
+            
+            <!-- Personal Info -->
+            <div class="flex-1">
+                <div class="space-y-4">
+                    <div class="info-item">
+                        <h1 class="text-4xl md:text-5xl font-bold text-gray-800">Abobakr Taha</h1>
+                        <p class="text-xl text-gray-600 mt-2">Design of Ionic Liquids</p>
+                    </div>
+                    <div class="info-item">
+                        <p class="flex items-center text-gray-600">
+                            <i class="fas fa-phone-alt mr-3 text-indigo-600"></i>
+                            <span>+1 (804) 316-8320</span>
+                        </p>
+                    </div>
+                    <div class="info-item">
+                        <p class="flex items-center text-gray-600">
+                            <i class="fas fa-envelope mr-3 text-indigo-600"></i>
+                            <span>abubakrkhz@yahoo.com</span>
+                        </p>
+                    </div>
+                    <div class="info-item">
+                        <p class="flex items-center text-gray-600">
+                            <i class="fas fa-graduation-cap mr-3 text-indigo-600"></i>
+                            <span>PhD in Chemical Engineering-M.Sc.& B.Sc. in Chemistry</span>
+                        </p>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto bg-white rounded-xl shadow-sm mt-10">
+        <div class="opacity-0 transform translate-y-10 transition-all duration-500 ease-in-out" id="about-section">
+            <h2 class="section-title text-3xl font-bold text-gray-800 mb-8">About Me</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        An enthusiastic chemistry assistant professor with over 25 years of experience teaching
+ and mentoring students in higher education. Exhibits remarkable communication skills in
+ conveying complicated scientific concepts to students from various backgrounds.
+ Knowledge of curriculum development, laboratory techniques, and research
+ methodologies. 
+                    </p>
+                </div>
+                <div>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Capable of changing teaching approaches to fit individual learning styles. Committed to helping kids develop critical thinking, problem-solving, and scientific inquiry abilities. Dedicated to the advancement of chemistry through research and publication. Most proud of advancing scientific knowledge through research and mentoring future scientists.
+                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mt-6">
+                        <a href="#" class="px-6 py-3 bg-indigo-600 text-white rounded-full hover:bg-indigo-700 transition-all transform hover:scale-105 shadow-md text-center">
+                            Download CV
+                        </a>
+                        <a href="#contact" class="px-6 py-3 border border-indigo-600 text-indigo-600 rounded-full hover:bg-indigo-50 transition-all transform hover:scale-105 text-center">
+                            Contact Me
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto mt-10">
+        <h2 class="section-title text-3xl font-bold text-gray-800 mb-12 text-center">ACADEMICS</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Project Card Template - You can duplicate and modify these -->
+            <div class="project-card bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all transform hover:scale-105 border border-gray-100">
+                <div class="mb-4">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-code text-blue-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">EDUCATION</h3>
+                    <p class="text-gray-600 text-sm mb-4">■ Universiti Teknologi Petronas - PhD in Chemical Engineering <br/>■ University of Gezira - M.Sc. & Postgraduate Diploma in Chemistry <br/>■ University of Garyounis - B.Sc. in Chemistry </p>
+                </div>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="px-2 py-1 bg-indigo-100 text-indigo-700 text-xs rounded-full">React</span>
+                    <span class="px-2 py-1 bg-green-100 text-green-700 text-xs rounded-full">Node.js</span>
+                    <span class="px-2 py-1 bg-purple-100 text-purple-700 text-xs rounded-full">MongoDB</span>
+                </div>
+                <div class="flex space-x-3">
+                    <a href="#" class="text-indigo-600 hover:text-indigo-800 text-sm font-medium">
+                        <i class="fas fa-external-link-alt mr-1"></i>Live Demo
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-gray-800 text-sm font-medium">
+                        <i class="fab fa-github mr-1"></i>Code
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all transform hover:scale-105 border border-gray-100">
+                <div class="mb-4">
+                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-mobile-alt text-green-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">PUBLICATIONS</h3>
+                    <p class="text-gray-600 text-sm mb-4">Cross-platform mobile application with modern features and smooth user experience.</p>
+                </div>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded-full">React Native</span>
+                    <span class="px-2 py-1 bg-yellow-100 text-yellow-700 text-xs rounded-full">Firebase</span>
+                    <span class="px-2 py-1 bg-red-100 text-red-700 text-xs rounded-full">Redux</span>
+                </div>
+                <div class="flex space-x-3">
+                    <a href="#" class="text-indigo-600 hover:text-indigo-800 text-sm font-medium">
+                        <i class="fas fa-external-link-alt mr-1"></i>Live Demo
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-gray-800 text-sm font-medium">
+                        <i class="fab fa-github mr-1"></i>Code
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all transform hover:scale-105 border border-gray-100">
+                <div class="mb-4">
+                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-chart-bar text-purple-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">SKILLS</h3>
+                    <p class="text-gray-600 text-sm mb-4">Interactive dashboard for data visualization and analytics with real-time updates.</p>
+                </div>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="px-2 py-1 bg-orange-100 text-orange-700 text-xs rounded-full">D3.js</span>
+                    <span class="px-2 py-1 bg-teal-100 text-teal-700 text-xs rounded-full">Python</span>
+                    <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">PostgreSQL</span>
+                </div>
+                <div class="flex space-x-3">
+                    <a href="#" class="text-indigo-600 hover:text-indigo-800 text-sm font-medium">
+                        <i class="fas fa-external-link-alt mr-1"></i>Live Demo
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-gray-800 text-sm font-medium">
+                        <i class="fab fa-github mr-1"></i>Code
+                    </a>
+                </div>
+            </div>
+
+            <!-- Add more project cards as needed -->
+            <div class="project-card bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all transform hover:scale-105 border border-gray-100">
+                <div class="mb-4">
+                    <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-shopping-cart text-red-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">POSITIONS</h3>
+                    <p class="text-gray-600 text-sm mb-4">Full-stack e-commerce solution with payment processing and inventory management.</p>
+                </div>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded-full">Next.js</span>
+                    <span class="px-2 py-1 bg-green-100 text-green-700 text-xs rounded-full">Stripe</span>
+                    <span class="px-2 py-1 bg-yellow-100 text-yellow-700 text-xs rounded-full">AWS</span>
+                </div>
+                <div class="flex space-x-3">
+                    <a href="#" class="text-indigo-600 hover:text-indigo-800 text-sm font-medium">
+                        <i class="fas fa-external-link-alt mr-1"></i>Live Demo
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-gray-800 text-sm font-medium">
+                        <i class="fab fa-github mr-1"></i>Code
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all transform hover:scale-105 border border-gray-100">
+                <div class="mb-4">
+                    <div class="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-blog text-yellow-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">PROJECTS</h3>
+                    <p class="text-gray-600 text-sm mb-4">Content management system with markdown support and SEO optimization.</p>
+                </div>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="px-2 py-1 bg-indigo-100 text-indigo-700 text-xs rounded-full">Gatsby</span>
+                    <span class="px-2 py-1 bg-purple-100 text-purple-700 text-xs rounded-full">GraphQL</span>
+                    <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">Contentful</span>
+                </div>
+                <div class="flex space-x-3">
+                    <a href="#" class="text-indigo-600 hover:text-indigo-800 text-sm font-medium">
+                        <i class="fas fa-external-link-alt mr-1"></i>Live Demo
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-gray-800 text-sm font-medium">
+                        <i class="fab fa-github mr-1"></i>Code
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all transform hover:scale-105 border border-gray-100">
+                <div class="mb-4">
+                    <div class="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-robot text-teal-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">CONFERNCES</h3>
+                    <p class="text-gray-600 text-sm mb-4">Intelligent chatbot with natural language processing and machine learning capabilities.</p>
+                </div>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded-full">Python</span>
+                    <span class="px-2 py-1 bg-green-100 text-green-700 text-xs rounded-full">TensorFlow</span>
+                    <span class="px-2 py-1 bg-orange-100 text-orange-700 text-xs rounded-full">Flask</span>
+                </div>
+                <div class="flex space-x-3">
+                    <a href="#" class="text-indigo-600 hover:text-indigo-800 text-sm font-medium">
+                        <i class="fas fa-external-link-alt mr-1"></i>Live Demo
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-gray-800 text-sm font-medium">
+                        <i class="fab fa-github mr-1"></i>Code
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto mt-10">
+        <h2 class="section-title text-3xl font-bold text-gray-800 mb-12 text-center">Education</h2>
+        
+        <div class="max-w-4xl mx-auto">
+            <div class="space-y-6">
+                <div class="education-card bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border-l-4 border-indigo-500">
+                    <div class="flex items-start">
+                        <div class="bg-indigo-100 p-3 rounded-full mr-4 flex-shrink-0">
+                            <i class="fas fa-graduation-cap text-indigo-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Universiti Teknologi Petronas</h4>
+                            <p class="text-gray-600">PhD in Chemical Engineering</p>
+                            <p class="text-sm text-gray-500 mt-1">2007 - 2011</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="education-card bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border-l-4 border-purple-500">
+                    <div class="flex items-start">
+                        <div class="bg-purple-100 p-3 rounded-full mr-4 flex-shrink-0">
+                            <i class="fas fa-certificate text-purple-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">University of Gezira</h4>
+                            <p class="text-gray-600">M.Sc. & Postgraduate Diploma in Chemistry</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education-card bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border-l-4 border-green-500">
+                    <div class="flex items-start">
+                        <div class="bg-green-100 p-3 rounded-full mr-4 flex-shrink-0">
+                            <i class="fas fa-award text-green-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">University of Garyounis</h4>
+                            <p class="text-gray-600">B.Sc. in Chemistry</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    
+                
+                
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto bg-white rounded-xl shadow-sm mt-10">
+        <div class="opacity-0 transform translate-y-10 transition-all duration-500 ease-in-out" id="contact-section">
+            <h2 class="section-title text-3xl font-bold text-gray-800 mb-8 text-center">Get In Touch</h2>
+            <p class="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+                I'm always interested in new opportunities and exciting projects. 
+                Let's discuss how we can work together to bring your ideas to life.
+            </p>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Contact Info -->
+                <div class="space-y-8">
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-indigo-100 p-3 rounded-full">
+                            <i class="fas fa-envelope text-indigo-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Email</h4>
+                            <p class="text-gray-600">abubakrkhz@yahoo.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-indigo-100 p-3 rounded-full">
+                            <i class="fas fa-phone text-indigo-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Phone</h4>
+                            <p class="text-gray-600">+1 (804) 316-8320</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-indigo-100 p-3 rounded-full">
+                            <i class="fas fa-map-marker-alt text-indigo-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Location</h4>
+                            <p class="text-gray-600">Glen Allen, 23060, VA</p>
+                        </div>
+                    </div>
+                    
+
+                </div>
+    <!-- Contact Form -->
+                <div>
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Name</label>
+                            <input type="text" id="name" name="name" required 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-colors"
+                                   placeholder="Your full name">
+                            <span class="error-message text-red-500 text-sm hidden"></span>
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                            <input type="email" id="email" name="email" required 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-colors"
+                                   placeholder="your.email@example.com">
+                            <span class="error-message text-red-500 text-sm hidden"></span>
+                        </div>
+                        
+                        <div>
+                            <label for="subject" class="block text-sm font-medium text-gray-700 mb-2">Subject</label>
+                            <input type="text" id="subject" name="subject" required 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-colors"
+                                   placeholder="Project inquiry">
+                            <span class="error-message text-red-500 text-sm hidden"></span>
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                            <textarea id="message" name="message" rows="5" required 
+                                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-colors resize-vertical"
+                                      placeholder="Tell me about your project..."></textarea>
+                            <span class="error-message text-red-500 text-sm hidden"></span>
+                        </div>
+                        
+                        <button type="submit" 
+                                class="w-full bg-indigo-600 text-white py-3 px-6 rounded-lg hover:bg-indigo-700 focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition-all transform hover:scale-105 font-medium">
+                            <span class="button-text">Send Message</span>
+                            <i class="fas fa-spinner fa-spin hidden loading-spinner"></i>
+                        </button>
+                        
+                        <div id="form-message" class="text-center hidden">
+                            <div class="success-message text-green-600 hidden">
+                                <i class="fas fa-check-circle mr-2"></i>
+                                Message sent successfully! I'll get back to you soon.
+                            </div>
+                            <div class="error-message-general text-red-600 hidden">
+                                <i class="fas fa-exclamation-circle mr-2"></i>
+                                Something went wrong. Please try again later.
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-20 bg-gray-900 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-gray-400">
+                © 2025 John Doe. All rights reserved. Built with ❤️ and lots of coffee.
+            </p>
+        </div>
+    </footer>
+
+    <script src="portfolio.js"></script>
+</body>
+</html>
